@@ -1,0 +1,252 @@
+body {
+    /* Селектор "body", отвечает за общий стиль страницы.*/
+    margin: 0;
+    /*Устанавливает величину отступа от каждого края элемента.*/
+    padding: 0;
+    /*Устанавливает значение полей вокруг содержимого элемента.*/
+    color: rgb(255, 255, 255);
+    /* Задает цвет базового фона страницы на "чисто-белый".*/
+    font-family: 'Play', sans-serif;
+}
+
+
+.Void {
+    /* "Void" - "Пустоты". Селектор, стилевое правило для него.*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* Задает отступ от верхней и левой границы страницы.*/
+    width: 100%;
+    /* Задает размер ширины Пустоты на 100% видимой области.*/
+    height: 1080px; 
+    /* Задает размер высоты Пустоты. */
+    background: rgb(0, 0, 0);
+    /* Задает цвет фона Пустоты на "чисто-черный".*/
+    z-index: 1;
+    /* Задает значение глубины у слоя.*/
+}
+
+.main1 {
+    /* Задает стиль для Туманностей.*/
+    position: fixed;
+    width: 1920px;
+    height: 1920px;
+    margin-top: -960px;
+    background: url('images/Backgr_05_Local_interstellar_cloud_FH_png.png') no-repeat;
+    background-size: 200%;
+    z-index: 2;
+    /* Задает значение глубины у слоя.*/
+}
+
+.main2 {
+    /* Задает стиль для Звезд.*/
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    background: url('images/Backgr_07_Stars_Ver01_FH_png.png') no-repeat;
+    background-size: contain;
+    z-index: 3;
+    /* Задает значение глубины у слоя.*/
+}
+
+
+
+
+
+
+.Top-scoreboard {
+    /* "Top-scoreboard" - "Верхнее табло". Селектор, стилевое правило для него.*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* Задает отступ от верхней и левой границы страницы.*/
+    width: 100%;
+    /* Задает размер ширины Верхнего табло на 100% видимой области.*/
+    height: 48px;
+    /* Задает размер высоты Верхнего табло. */
+    background: #000000;
+    /* Задает цвет фона Верхнего табло на "чисто-черный".*/
+    background-image: linear-gradient(to top, #3a3a3a 0%, #00000000 40%);
+    /* Задает цвет фона Верхнего табло на градиент "от темно-серого к чисто-черному" с прозрачностью 100% последнего.*/
+    border-bottom: 2px solid black;
+    /* Создает рамку внизу элемента с толщиной 2 пикселя и "чисто-черным цветом".*/
+    z-index: 4;
+    /* Задает значение глубины у слоя.*/
+}
+
+.Resource-Strip {
+    /* "Resource-Strip" - "Ресурсная полоска". Селектор, стилевое правило для него.*/
+    position: fixed;
+    top: 50px;
+    /* Задает отступ от верхней и левой границы страницы.*/
+    left: 0px;
+    width: 100%;
+    /* Задает размер ширины Ресурсной полоски на 100% видимой области.*/
+    height: 36px;
+    /* Задает размер высоты Ресурсной полоски. */
+    background: #3636366b;
+    /* Задает цвет фона Ресурсной полоски на "серый" с прозрачностью.*/
+    border-top: 2px solid rgb(110, 110, 110);
+    /* Создает рамку вверху элемента с толщиной 2 пикселя и "серым цветом".*/
+    z-index: 4;
+    /* Задает значение глубины у слоя.*/
+}
+
+
+
+
+.buttons-Top-scoreboard {
+    /* Кнопки Верхнего табло.*/
+
+    position: fixed;
+
+    margin: 3px;
+    padding: 3px;
+    top: 6px;
+    /* Расстояние от верхнего края */
+    z-index: 6
+        /* Глубина изображения  */
+}
+
+.buttons-Top-scoreboard li {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    background-image: linear-gradient(to top, #3a3a3a 0%, #000000 100%);
+    background-size: 100% auto;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    border: solid 1px #505050;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /* Тень от кнопок  */
+    text-align: center;
+    font-size: 14px;
+    text-shadow: -2px -2px 2px black, 2px 2px 2px black;
+    /* Тег, тень от текста. Смещение по горизонтали, по вертикали, радиус размытия, цвет. Отступ влева, отступ вправо.*/
+    display: inline-block;
+    z-index: 6
+        /* Глубина изображения  */
+
+}
+
+.buttons-Top-scoreboard li a {
+    color: white;
+    display: block;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+
+.buttons-Top-scoreboard li:hover {
+    background-image: linear-gradient(to top, #666666 0%, #000000 100%);
+    color: #fff;
+}
+
+
+
+
+
+.Title-bar {
+    /* Это заглавная полоска, где отображается имя планеты.*/
+    /**/
+    position: fixed;
+    left: 50%;
+    top: 88px;
+    width: 276px;
+    height: 0px;
+    margin-left: -150px;
+    padding: 0px;
+    border-top: 40px solid #3636366b;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    z-index: 5
+}
+
+
+
+
+.name-planet {
+    /* Отображает имя планеты в Заглавной полоске.*/
+    position: fixed;
+    left: 50%;
+    top: 96px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: -2px -2px 2px black, 2px 2px 2px black;
+    z-index: 6;
+}
+
+
+
+
+
+
+.earth {
+    /* Планета Земля с анимацией вращения.*/
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    top: 25%;
+    left: 35%;
+    background: url('images/planet.png') no-repeat;
+    background-size: contain;
+    z-index: 4;
+    -webkit-animation-name: cog;
+    -webkit-animation-duration: 95s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: cog;
+    -moz-animation-duration: 95s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: cog;
+    -ms-animation-duration: 95s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: cog;
+    animation-duration: 195s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@-ms-keyframes cog {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cog {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cog {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes cog {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
